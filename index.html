@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            color: #343a40;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        .header {
+            background-color: #212529; 
+            color: #ffffff; 
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffc107; 
+        }
+
+        .footer {
+            background-color: #343a40; 
+            color: #ffffff; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-pic img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border-radius: 15px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-img {
+            transition: all 0.3s ease;
+        }
+
+        .btn-img:hover {
+            transform: scale(1.2);
+        }
+
+        .container-welcome-message{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; 
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 50%; }
+        }
+
+        .typing-animation {
+            overflow: hidden;
+            border-right: 2px solid #ffc107;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3s steps(25, end), blink-caret 0.5s step-end infinite alternate;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #ffc107; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Portfolio</h1>
+    </div>
+
+    <div class="container-welcome-message">
+        <div class="col-md-12 align-self-center text-center">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 profile-pic text-center">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12 mt-5">
+                <h2>About me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 description">
+                <p>The CITE college of the University of Pangasinan, I am Tristan Keith G. Gomez, a student enrolled in an IT course. I have a strong desire to learn new things and push myself to the edge to see new things.</p>
+                <p>I started my college adventure more than two years ago, and I can't wait to keep going along this demanding yet worthwhile route. Here are a few of my proudest moments and challenging yet successful projects.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12 mt-5">
+                <h2>1ST YEAR PROJECTS</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="download (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">QR Code Generator</p>
+                        <p class="card-text">One of my first projects is a QR Code Generator, operated using the Python GUI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Guess The Color</p>
+                        <p class="card-text">My final project for our freshman is Guess the color, made from java gui and it has a plot twist.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="download (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Photography Website</p>
+                        <p class="card-text">We created a website for people who love photography and capturing views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12 mt-5">
+                <h2>2ND YEAR PROJECTS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="download (2).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Vehicles Repair</p>
+                        <p class="card-text">A gaming store application made using Android Studio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sign-in.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Laravel Sign-in Page</p>
+                        <p class="card-text">A sign-in page made using the Laravel framework. It includes a password recovery system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pngwing.com.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Postman API Practice</p>
+                        <p class="card-text">A Laravel app with Postman API functions, serving as practice for future applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <a href="https://www.facebook.com/tristankeith.gomez"><img src="icons8-facebook-30.png" alt="Facebook" class="btn-img"></a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://github.com/Tristan-Keith-Gomez-Block4-Activity1"><img src="icons8-github-30.png" alt="GitHub" class="btn-img"></a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://www.linkedin.com/in/tristan-keith-gomez-40a92a2b1/"><img src="icons8-linked-in-48.png" alt="LinkedIn" class="btn-img"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Copyright_TristanKeithGomez-2024</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
