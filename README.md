@@ -1,1 +1,1 @@
-# TristanGomez.io
+# TristanGomez.github.io
